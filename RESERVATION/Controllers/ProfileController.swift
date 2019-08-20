@@ -19,6 +19,7 @@ class ProfileController: MoveableController {
     var beeUser: BeeUser?
     var canAdd = false
     var imagePicker = UIImagePickerController()
+    var loadingIV: LoadingImageView?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -92,11 +93,21 @@ extension ProfileController: UIImagePickerControllerDelegate, UINavigationContro
             
             // Formatte image pour database
             if let data = originale.jpegData(compressionQuality: 0.2) {
+                
+                //Créer animation
+                loadingIV = LoadingImageView(frame: CGRect(x: view.frame.width / 2 - 75, y: 75, width: 150, height: 150))
+                loadingIV?.start()
+                if loadingIV != nil {
+                    view.addSubview(loadingIV!)
+                    valideButton.isEnabled = true
+                }
+
                 FirebaseHelper().addProfilePicture(data)
             }
-            
-            
         }
+        loadingIV?.stop()
+        loadingIV?.removeFromSuperview()
+        loadingIV = nil
         picker.dismiss(animated: true, completion: nil)
     }
     

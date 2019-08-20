@@ -143,17 +143,17 @@ class FirebaseHelper {
         
     }
     
-   func getAnswer(ref: DatabaseReference, completion: ((Answer) -> Void)?) {
+   /*func getAnswer(ref: DatabaseReference, completion: ((Answer) -> Void)?) {
         ref.child("answers").observe(.childAdded) { (data) in
             if let dict = data.value as? [String: Any] {
                 if let userId = dict["userId"] as? String {
-                    let answer = Answer(userId: userId, data: data)
+                    let answer = getAnswer(userId: userId, data: data)
                     completion?(answer)
                 }
             }
         }
     }
-    
+    */
     
     /// Storage
     private let _storage = Storage.storage().reference()
