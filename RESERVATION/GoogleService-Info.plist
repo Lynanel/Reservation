@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>302199109439-hecej2ft0l12lmdg8ic97iouahsmr6br.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.302199109439-hecej2ft0l12lmdg8ic97iouahsmr6br</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCvkhe1bqywTMRclwlwaQ8tJ0Rq9bU8cUY</string>
+	<key>GCM_SENDER_ID</key>
+	<string>302199109439</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>MAAH.RESERVATION</string>
+	<key>PROJECT_ID</key>
+	<string>gestionppd</string>
+	<key>STORAGE_BUCKET</key>
+	<string>gestionppd.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:302199109439:ios:b3f2126070ef1c95</string>
+	<key>DATABASE_URL</key>
+	<string>https://gestionppd.firebaseio.com</string>
+</dict>
+</plist>
